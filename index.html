@@ -465,11 +465,11 @@
     }  
       
     @keyframes moonBlinkPulse {  
-      0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 15px var(--accent-color-glow, rgba(251, 191, 36, 0.8))); }  
-      50% { opacity: 0.25; transform: scale(0.92) rotate(3deg); filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.3)); }  
+      0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 18px rgba(251, 191, 36, 0.9)); }  
+      50% { opacity: 0.2; transform: scale(0.9) rotate(3deg); filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.2)); }  
     }  
     .moon-loading-icon {  
-      animation: moonBlinkPulse 1.4s ease-in-out infinite;  
+      animation: moonBlinkPulse 1.2s ease-in-out infinite;  
       display: inline-block;  
     }  
   </style>  
@@ -507,8 +507,7 @@
       <div class="absolute top-[22%] left-[30%] animate-floating-heart-rev text-pink-300"><i data-lucide="disc" class="w-3.5 h-3.5"></i></div>  
     </div>  
       
-    <!-- OPENING ASSISTIVE TOUCH DOCK -->  
-    <div id="opening-assistive-dock" class="assistive-touch-float" title="AssistiveTouch Menu">  
+    <div id="opening-assistive-dock" class="assistive-touch-float" onclick="toggleOpeningAssistiveMenu(event)" title="AssistiveTouch Menu">  
       <i id="opening-assistive-dock-icon" data-lucide="heart" class="w-5 h-5 fill-current" style="color: var(--accent-color-2);"></i>  
     </div>  
       
@@ -571,7 +570,7 @@
     </div>  
   </div>  
   
-  <div id="assistive-dock" class="assistive-touch-float" title="AssistiveTouch Menu">  
+  <div id="assistive-dock" class="assistive-touch-float" onclick="toggleAssistiveTouchMenu(event)" title="AssistiveTouch Menu">  
     <i id="assistive-dock-icon" data-lucide="heart" class="w-5 h-5 fill-current" style="color: var(--accent-color-2);"></i>  
   </div>  
   
@@ -726,7 +725,7 @@
           <div class="border-b pb-6 text-center md:text-left relative z-10" style="border-color: var(--moon-tab-glow);">  
             <div class="flex items-center justify-center md:justify-start gap-2 mb-1">  
               <i data-lucide="sparkles" class="w-4 h-4 animate-pulse" style="color: var(--moon-tab-accent-1);"></i>  
-              <span class="serif-title text-sm md:text-base font-semibold tracking-wide" style="color: var(--moon-tab-accent-1);">Mayari’s Reminder</span>  
+              <span class="serif-title text-sm md:text-base font-semibold tracking-wide" style="color: var(--moon-tab-accent-1);">Mayari's Reminder</span>  
             </div>  
             <h2 class="serif-title text-3xl md:text-5xl font-medium tracking-wide drop-shadow-[0_0_12px_rgba(251,191,36,0.3)]" style="color: var(--moon-tab-accent-1);">Pick a Moon When</h2>  
           </div>  
@@ -1223,6 +1222,12 @@
         }  
         if (appData.theme && !appData.theme.accentColor2) appData.theme.accentColor2 = appData.theme.accentColor || '#E11D48';  
         if (appData.opening && !appData.opening.badgeText) appData.opening.badgeText = "PROT. SPACE";  
+        if (!appData.spotifyTracks || appData.spotifyTracks.length === 0) {  
+          appData.spotifyTracks = defaultInitialData.spotifyTracks;  
+        }  
+        if (!appData.auStories || appData.auStories.length === 0) {  
+          appData.auStories = defaultInitialData.auStories;  
+        }  
       } else {  
         appData = JSON.parse(JSON.stringify(defaultInitialData));  
       }  
