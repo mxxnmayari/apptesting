@@ -1,19 +1,22 @@
-#   
 <!DOCTYPE html>  
 <html lang="en" class="scroll-smooth">  
-<head>  
-  
-<!-- Links your manifest file -->  
-<link rel="manifest" href="manifest.json">  
-  
-<!-- Tells iOS (iPhone) to open as a full-screen app -->  
-<meta name="apple-mobile-web-app-capable" content="yes">  
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
-<meta name="apple-mobile-web-app-title" content="Solace">  
-  
-<!-- Apple home screen icon -->  
-<link rel="apple-touch-icon" href="icon.png">  
-  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solace</title>
+
+  <!-- Links your manifest file for Android -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- For iPhone/iPad Home Screen and Icon -->
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Solace">
+</head>
+
 <meta charset="UTF-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <title>For My Solace | Dedicated Space</title>  
@@ -565,11 +568,11 @@ Collection of letters, songs, and stories compiled with you in mind.
   
 <div id="assistive-menu-popup" class="fixed z-[110] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-3 border border-stone-200 space-y-2 w-56 opacity-0 scale-95 pointer-events-none transition-all duration-150 transform origin-bottom-right">  
 <div class="text-[10px] uppercase tracking-widest mono-font font-bold text-stone-400 px-2 pb-1 border-b">Quick Navigation</div>  
-<button onclick="switchTab('intro'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-rose-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>💌</span><span>Letters & Thoughts</span></button>  
-<button onclick="switchTab('songs'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-rose-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>💖</span><span>Songs for You</span></button>  
-<button onclick="switchTab('spotify'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-stone-100 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>🎧</span><span>Spotify</span></button>  
-<button onclick="switchTab('stories'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-stone-100 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>🪶</span><span>AU Stories</span></button>  
-<button onclick="switchTab('moons'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-amber-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>🌙</span><span>Pick Moon When</span></button>  
+<button onclick="switchTab('intro'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-rose-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>ð</span><span>Letters & Thoughts</span></button>  
+<button onclick="switchTab('songs'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-rose-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>ð</span><span>Songs for You</span></button>  
+<button onclick="switchTab('spotify'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-stone-100 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>ð§</span><span>Spotify</span></button>  
+<button onclick="switchTab('stories'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-stone-100 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>ðª¶</span><span>AU Stories</span></button>  
+<button onclick="switchTab('moons'); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl hover:bg-amber-50 text-xs font-medium text-stone-700 flex items-center gap-2.5 transition-colors"><span>ð</span><span>Pick Moon When</span></button>  
 <button onclick="handleCustomizeClick(); closeAssistiveMenu();" class="w-full text-left px-3 py-2 rounded-xl bg-purple-600 text-white text-xs font-semibold flex items-center gap-2.5 mt-1 hover:brightness-110 shadow-md">  
 <i data-lucide="sparkles" class="w-3.5 h-3.5 text-purple-200"></i>  
 <span>Customize Space</span>  
@@ -664,7 +667,7 @@ Collection of letters, songs, and stories compiled with you in mind.
 <span class="text-xs tracking-widest uppercase mono-font font-semibold">DEDICATED TRACKS & NOTES</span>  
 </div>  
 <h2 class="serif-title text-3xl md:text-5xl font-medium tracking-wide">Songs for You</h2>  
-<p class="text-xs md:text-sm opacity-80 mt-1 font-light italic">Press play on any track while you read—each one holds a note meant only for you.</p>  
+<p class="text-xs md:text-sm opacity-80 mt-1 font-light italic">Press play on any track while you readâeach one holds a note meant only for you.</p>  
 </div>  
 </div>  
 <div class="flex flex-wrap items-center gap-2 pt-2">  
@@ -714,7 +717,7 @@ Collection of letters, songs, and stories compiled with you in mind.
 <div class="border-b pb-6 text-center md:text-left relative z-10" style="border-color: var(--moon-tab-glow);">  
 <div class="flex items-center justify-center md:justify-start gap-2 mb-1">  
 <i data-lucide="sparkles" class="w-4 h-4 animate-pulse" style="color: var(--moon-tab-accent-1);"></i>  
-<span class="serif-title text-sm md:text-base font-semibold tracking-wide" style="color: var(--moon-tab-accent-1);">Mayari’s Reminder</span>  
+<span class="serif-title text-sm md:text-base font-semibold tracking-wide" style="color: var(--moon-tab-accent-1);">Mayariâs Reminder</span>  
 </div>  
 <h2 class="serif-title text-3xl md:text-5xl font-medium tracking-wide drop-shadow-[0_0_12px_rgba(251,191,36,0.3)]" style="color: var(--moon-tab-accent-1);">Pick a Moon When</h2>  
 </div>  
@@ -757,20 +760,20 @@ Collection of letters, songs, and stories compiled with you in mind.
 <div id="moon-loading-view" class="flex flex-col items-center justify-center space-y-4 text-center max-w-sm p-8 bg-transparent border-none shadow-none">  
 <div class="relative">  
 <div class="absolute -inset-8 rounded-full blur-2xl animate-pulse" style="background-color: var(--moon-tab-glow);"></div>  
-<span class="moon-loading-icon text-7xl md:text-8xl">🌙</span>  
+<span class="moon-loading-icon text-7xl md:text-8xl">ð</span>  
 </div>  
 <p class="moon-loading-text serif-title text-lg md:text-xl font-medium tracking-wide italic drop-shadow-[0_0_12px_rgba(251,191,36,0.8)]" style="color: var(--moon-tab-accent-1);">  
-“A little moonbeam is bringing Mayari’s message…”  
+âA little moonbeam is bringing Mayariâs messageâ¦â  
 </p>  
 </div>  
 <div id="moon-message-popup" class="hidden bg-stone-900 rounded-3xl max-w-lg w-full p-6 md:p-8 space-y-6 shadow-2xl relative border-2 max-h-[85vh] flex flex-col justify-between overflow-hidden" style="border-color: var(--moon-tab-accent-1); color: var(--moon-tab-text);">  
 <div class="flex items-start justify-between border-b pb-4 shrink-0" style="border-color: var(--moon-tab-glow);">  
 <div class="flex items-center gap-3">  
-<span id="moon-modal-emoji" class="text-4xl">🌙</span>  
+<span id="moon-modal-emoji" class="text-4xl">ð</span>  
 <div>  
 <span id="moon-modal-title" class="serif-title text-xl md:text-2xl font-semibold tracking-wide block" style="color: var(--moon-tab-accent-1);">Letting go</span>  
-<span class="text-[10px] mono-font uppercase tracking-widest block font-medium mt-0.5 opacity-80" style="color: var(--moon-tab-text);">READ ME WHEN…</span>  
-<p id="moon-modal-prompt" class="serif-title text-sm md:text-base font-light italic tracking-wide mt-0.5 opacity-90">you’re holding on to something that hurts.</p>  
+<span class="text-[10px] mono-font uppercase tracking-widest block font-medium mt-0.5 opacity-80" style="color: var(--moon-tab-text);">READ ME WHENâ¦</span>  
+<p id="moon-modal-prompt" class="serif-title text-sm md:text-base font-light italic tracking-wide mt-0.5 opacity-90">youâre holding on to something that hurts.</p>  
 </div>  
 </div>  
 <button onclick="closeMoonModal()" class="p-2 rounded-full hover:bg-white/10 transition-colors" style="color: var(--moon-tab-accent-1);"><i data-lucide="x" class="w-5 h-5"></i></button>  
@@ -795,7 +798,7 @@ Collection of letters, songs, and stories compiled with you in mind.
 <i data-lucide="sparkles" class="w-5 h-5 text-purple-600"></i>  
 </div>  
 <div>  
-<h3 class="serif-title text-xl font-medium text-purple-950">Mayari’s Customization Space 🎀</h3>  
+<h3 class="serif-title text-xl font-medium text-purple-950">Mayariâs Customization Space ð</h3>  
 <p class="text-xs text-purple-700/80 mt-1 font-light">Enter your passcode to manage letters, songs, stories, and theme colors.</p>  
 </div>  
 <div class="space-y-2">  
@@ -804,7 +807,7 @@ Collection of letters, songs, and stories compiled with you in mind.
 </div>  
 <div class="flex gap-2 pt-2">  
 <button onclick="closePasswordModal()" class="w-1/2 py-2.5 bg-purple-100 hover:bg-purple-200 text-purple-800 text-xs font-medium rounded-xl transition-colors">Cancel</button>  
-<button onclick="verifyPasscode()" class="w-1/2 py-2.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-xl shadow-md transition-colors">Unlock Space ✨</button>  
+<button onclick="verifyPasscode()" class="w-1/2 py-2.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-xl shadow-md transition-colors">Unlock Space â¨</button>  
 </div>  
 </div>  
 </div>  
@@ -827,7 +830,7 @@ Collection of letters, songs, and stories compiled with you in mind.
         <div class="space-y-1">  
           <div class="text-[10px] uppercase mono-font font-bold tracking-wider text-purple-400 px-3 py-1">Folders & Spaces</div>  
           <div onclick="switchCustomizeSubTab('general')" id="cust-subtab-btn-general" class="finder-sidebar-item active"><i data-lucide="folder" class="w-4 h-4 text-purple-600"></i><span>Opening & Theme</span></div>  
-          <div onclick="switchCustomizeSubTab('moontab')" id="cust-subtab-btn-moontab" class="finder-sidebar-item"><i data-lucide="moon" class="w-4 h-4 text-amber-500"></i><span>Moon Tab Theme ✨</span></div>  
+          <div onclick="switchCustomizeSubTab('moontab')" id="cust-subtab-btn-moontab" class="finder-sidebar-item"><i data-lucide="moon" class="w-4 h-4 text-amber-500"></i><span>Moon Tab Theme â¨</span></div>  
           <div onclick="switchCustomizeSubTab('letters')" id="cust-subtab-btn-letters" class="finder-sidebar-item"><i data-lucide="folder" class="w-4 h-4 text-purple-600"></i><span>Letters</span></div>  
           <div onclick="switchCustomizeSubTab('songs')" id="cust-subtab-btn-songs" class="finder-sidebar-item"><i data-lucide="folder" class="w-4 h-4 text-purple-600"></i><span>Songs</span></div>  
           <div onclick="switchCustomizeSubTab('spotify')" id="cust-subtab-btn-spotify" class="finder-sidebar-item"><i data-lucide="folder" class="w-4 h-4 text-purple-600"></i><span>Spotify Playlists</span></div>  
@@ -858,7 +861,7 @@ Collection of letters, songs, and stories compiled with you in mind.
               
             <div class="p-3.5 bg-purple-50 rounded-xl border border-purple-200 space-y-2.5">  
               <label class="text-[11px] font-medium text-purple-900 block flex items-center justify-between">  
-                <span>✨ Dual-HEX Harmony Generator (2 Favorite Colors)</span>  
+                <span>â¨ Dual-HEX Harmony Generator (2 Favorite Colors)</span>  
                 <span class="text-[9px] mono-font bg-purple-200 text-purple-800 px-2 py-0.5 rounded-full font-medium">Active</span>  
               </label>  
               <div class="grid grid-cols-2 gap-2">  
@@ -884,7 +887,7 @@ Collection of letters, songs, and stories compiled with you in mind.
             </div>  
   
             <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 space-y-2">  
-              <label class="text-[11px] font-medium text-amber-900 block">💾 Save Current Palette</label>  
+              <label class="text-[11px] font-medium text-amber-900 block">ð¾ Save Current Palette</label>  
               <div class="flex items-center gap-2">  
                 <input type="text" id="save-palette-name-input" placeholder="Palette Name (e.g. My Vibe)" class="flex-1 px-3 py-2 rounded-xl border border-amber-300 text-xs bg-white">  
                 <button onclick="saveCurrentCustomPalette()" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-medium shrink-0 shadow-sm">Save</button>  
@@ -916,7 +919,7 @@ Collection of letters, songs, and stories compiled with you in mind.
           <div class="p-4 bg-white/90 rounded-2xl border border-purple-200 space-y-3 shadow-sm">  
             <div class="flex items-center gap-2 border-b border-purple-100 pb-2">  
               <i data-lucide="moon" class="w-4 h-4 text-amber-500"></i>  
-              <h4 class="text-xs uppercase tracking-wider mono-font font-bold text-purple-900">Dedicated Moon Tab Theme Picker ✨</h4>  
+              <h4 class="text-xs uppercase tracking-wider mono-font font-bold text-purple-900">Dedicated Moon Tab Theme Picker â¨</h4>  
             </div>  
             <p class="text-[11px] text-purple-800 font-light">Configure colors exclusively for the **Pick Moon When** tab.</p>  
             <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 space-y-2">  
@@ -925,10 +928,10 @@ Collection of letters, songs, and stories compiled with you in mind.
                 <span>Ready-to-Use Moon Tab Theme Presets</span>  
               </label>  
               <div class="grid grid-cols-2 md:grid-cols-4 gap-2 pt-1">  
-                <button onclick="applyMoonPreset('midnightGold')" class="p-2 rounded-lg bg-[#07060d] text-[#fbbf24] border border-amber-400/40 text-[10px] font-medium">Midnight Gold 🌙</button>  
-                <button onclick="applyMoonPreset('roseGalaxy')" class="p-2 rounded-lg bg-[#180814] text-[#f472b6] border border-pink-400/40 text-[10px] font-medium">Rose Galaxy 💖</button>  
-                <button onclick="applyMoonPreset('emeraldNight')" class="p-2 rounded-lg bg-[#041510] text-[#34d399] border border-emerald-400/40 text-[10px] font-medium">Emerald Night 🌿</button>  
-                <button onclick="applyMoonPreset('lavenderDream')" class="p-2 rounded-lg bg-[#0f0c1b] text-[#c084fc] border border-purple-400/40 text-[10px] font-medium">Lavender Dream ✨</button>  
+                <button onclick="applyMoonPreset('midnightGold')" class="p-2 rounded-lg bg-[#07060d] text-[#fbbf24] border border-amber-400/40 text-[10px] font-medium">Midnight Gold ð</button>  
+                <button onclick="applyMoonPreset('roseGalaxy')" class="p-2 rounded-lg bg-[#180814] text-[#f472b6] border border-pink-400/40 text-[10px] font-medium">Rose Galaxy ð</button>  
+                <button onclick="applyMoonPreset('emeraldNight')" class="p-2 rounded-lg bg-[#041510] text-[#34d399] border border-emerald-400/40 text-[10px] font-medium">Emerald Night ð¿</button>  
+                <button onclick="applyMoonPreset('lavenderDream')" class="p-2 rounded-lg bg-[#0f0c1b] text-[#c084fc] border border-purple-400/40 text-[10px] font-medium">Lavender Dream â¨</button>  
               </div>  
             </div>  
             <div class="grid grid-cols-2 gap-3 pt-1">  
@@ -1099,7 +1102,7 @@ savedCustomPalettes: [],
 letters: [  
 {  
 badge: "POSTAL LETTER #1",  
-heading: "Letter 01 — Dedicated Thoughts",  
+heading: "Letter 01 â Dedicated Thoughts",  
 date: "Special Note",  
 greeting: "Dearest Solace,",  
 body: "Knowing you is like finding a quiet room in a noisy world. Thank you for simply being yourself.",  
@@ -1144,51 +1147,51 @@ link: "https://vt.tiktok.com/ZS9Dg8cHAXmpE-XhEze/"
 ],  
 moonMessages: [  
 {  
-emoji: "🌑",  
+emoji: "ð",  
 title: "New beginnings",  
-prompt: "you’re starting over.",  
+prompt: "youâre starting over.",  
 messages: ["Every ending carries the gentle seed of a brand new start."]  
 },  
 {  
-emoji: "🌒",  
+emoji: "ð",  
 title: "Hope & growth",  
 prompt: "you need a little hope.",  
 messages: ["Even the smallest sliver of light can brighten the dark."]  
 },  
 {  
-emoji: "🌓",  
+emoji: "ð",  
 title: "Courage",  
-prompt: "you’re facing something difficult.",  
+prompt: "youâre facing something difficult.",  
 messages: ["You possess a quiet strength that carries you through every wave."]  
 },  
 {  
-emoji: "🌔",  
+emoji: "ð",  
 title: "Almost there",  
 prompt: "you feel like giving up.",  
 messages: ["Take a step back and breathe. You are closer than you think."]  
 },  
 {  
-emoji: "🌕",  
+emoji: "ð",  
 title: "Love & fullness",  
 prompt: "you want to know how much you mean to me.",  
 messages: ["You bring so much light and joy into the world around you."]  
 },  
 {  
-emoji: "🌖",  
+emoji: "ð",  
 title: "Gratitude",  
 prompt: "you need to remember how special you are.",  
 messages: ["Never forget how irreplaceable your presence truly is."]  
 },  
 {  
-emoji: "🌗",  
+emoji: "ð",  
 title: "Letting go",  
-prompt: "you’re holding on to something that hurts.",  
+prompt: "youâre holding on to something that hurts.",  
 messages: ["Release what you cannot control. Peace is waiting for you."]  
 },  
 {  
-emoji: "🌘",  
+emoji: "ð",  
 title: "Rest & reassurance",  
-prompt: "you’re exhausted.",  
+prompt: "youâre exhausted.",  
 messages: ["It is okay to rest your heart today. You have done enough."]  
 }  
 ],  
@@ -1273,7 +1276,7 @@ const dot = document.getElementById(`dot-${i}`);
 if (dot) dot.classList.add('heart-broken');  
 }  
 if (err && msgEl) {  
-msgEl.innerHTML = `💔 Incorrect! <span class="text-amber-300 font-bold block mt-0.5">Hint: Your Birthday (MMDD)</span>`;  
+msgEl.innerHTML = `ð Incorrect! <span class="text-amber-300 font-bold block mt-0.5">Hint: Your Birthday (MMDD)</span>`;  
 err.classList.remove('opacity-0');  
 }  
 setTimeout(() => {  
@@ -1296,7 +1299,7 @@ method: 'POST',
 headers: { 'Content-Type': 'application/json' },  
 body: JSON.stringify({  
 embeds: [{  
-title: "💖 Someone just opened For My Solace!",  
+title: "ð Someone just opened For My Solace!",  
 description: "Your dedicated sanctuary website was unlocked and opened.",  
 color: 12070008,  
 timestamp: new Date().toISOString()  
@@ -1309,7 +1312,7 @@ function sendTestDiscordAlert() {
 const urlInput = document.getElementById('discord-webhook-input').value.trim();  
 const statusEl = document.getElementById('discord-test-status');  
 if (!urlInput) {  
-if (statusEl) { statusEl.innerText = "❌ Enter Webhook URL first."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
+if (statusEl) { statusEl.innerText = "â Enter Webhook URL first."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
 return;  
 }  
 fetch(urlInput, {  
@@ -1317,7 +1320,7 @@ method: 'POST',
 headers: { 'Content-Type': 'application/json' },  
 body: JSON.stringify({  
 embeds: [{  
-title: "🔔 Discord Notification Test Successful!",  
+title: "ð Discord Notification Test Successful!",  
 description: "Your website is connected to Discord. You will receive real-time alerts whenever she opens your site!",  
 color: 5763719,  
 timestamp: new Date().toISOString()  
@@ -1325,12 +1328,12 @@ timestamp: new Date().toISOString()
 })  
 }).then(res => {  
 if (res.ok) {  
-if (statusEl) { statusEl.innerText = "✅ Test alert sent! Check Discord."; statusEl.className = "text-xs text-emerald-600 font-semibold"; }  
+if (statusEl) { statusEl.innerText = "â Test alert sent! Check Discord."; statusEl.className = "text-xs text-emerald-600 font-semibold"; }  
 } else {  
-if (statusEl) { statusEl.innerText = "❌ Webhook error. Check URL."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
+if (statusEl) { statusEl.innerText = "â Webhook error. Check URL."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
 }  
 }).catch(() => {  
-if (statusEl) { statusEl.innerText = "❌ Failed. Check URL."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
+if (statusEl) { statusEl.innerText = "â Failed. Check URL."; statusEl.className = "text-xs text-rose-500 font-semibold"; }  
 });  
 }  
   
@@ -1693,13 +1696,13 @@ return `
 </div>  
 <div class="flex items-center justify-between text-[11px] text-stone-600 mono-font pt-0.5 border-t border-stone-200/60">  
 <span class="truncate font-medium">Artist: ${escapeHtml(song.artist)}</span>  
-<span class="font-semibold shrink-0" style="color: ${badgeTextColor};">♥ MIXTAPE</span>  
+<span class="font-semibold shrink-0" style="color: ${badgeTextColor};">â¥ MIXTAPE</span>  
 </div>  
 </div>  
 <div class="bg-stone-950/95 rounded-2xl p-3 border border-white/20 flex items-center justify-between gap-3 shadow-inner relative">  
 <div class="cassette-reel-hole animate-spin-slow shrink-0"><div class="w-3 h-3 rounded-full bg-stone-400 border border-stone-600"></div></div>  
 <div class="flex-1 bg-stone-900 border border-stone-800 rounded-lg px-3 py-1.5 text-center mono-font text-[10px] text-amber-300 tracking-widest flex items-center justify-between shadow-inner">  
-<span>● REC</span>  
+<span>â REC</span>  
 <div class="w-12 h-2.5 bg-stone-800 rounded-full overflow-hidden flex items-center px-0.5"><div class="w-3/4 h-1.5 rounded-full" style="${badgeBg}"></div></div>  
 <span>STEREO</span>  
 </div>  
@@ -1779,7 +1782,7 @@ return `<div id="${cardId}" class="p-6 rounded-3xl shadow-2xl relative overflow-
 <h3 class="serif-title text-xl md:text-2xl font-medium truncate mt-1">${escapeHtml(track.title || 'hello')}</h3>   
 </div>   
 <div class="relative w-44 h-44 shrink-0 flex items-center justify-center my-2 cursor-pointer group" onclick="toggleVinylPin(${idx})" title="Click to insert/pull pin">   
-${isInserted ? `<div class="floating-music-note text-base top-2 left-6" style="color: var(--accent-color-2);">🎵</div><div class="floating-music-note text-lg top-8 right-4" style="animation-delay: 0.9s; color: var(--accent-color);">🎶</div>` : ''}   
+${isInserted ? `<div class="floating-music-note text-base top-2 left-6" style="color: var(--accent-color-2);">ðµ</div><div class="floating-music-note text-lg top-8 right-4" style="animation-delay: 0.9s; color: var(--accent-color);">ð¶</div>` : ''}   
 <div class="w-40 h-40 rounded-full ${isInserted ? 'animate-spin-slow' : ''} flex items-center justify-center shadow-2xl relative" style="background: radial-gradient(circle, #2b2b2b 20%, #111111 35%, #222222 55%, #050505 80%, #1a1a1a 100%); border: 3px solid #444;">   
 <div class="w-14 h-14 rounded-full border-2 border-white flex items-center justify-center text-white shadow-inner" style="background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2));"><i data-lucide="headphones" class="w-6 h-6 text-white"></i></div>   
 </div>   
@@ -1824,9 +1827,9 @@ if (window.lucide) lucide.createIcons();
 function sanitizeMoonData(moonsList) {  
 if (!Array.isArray(moonsList) || moonsList.length === 0) return defaultInitialData.moonMessages;  
 return moonsList.map(m => ({  
-emoji: m.emoji || "🌙",  
+emoji: m.emoji || "ð",  
 title: m.title || "Letting go",  
-prompt: m.prompt || "you’re holding on to something that hurts.",  
+prompt: m.prompt || "youâre holding on to something that hurts.",  
 messages: Array.isArray(m.messages) && m.messages.length > 0 ? m.messages : ["Example note"]  
 }));  
 }  
@@ -1844,7 +1847,7 @@ const randomSize = sizes[Math.floor(Math.random() * sizes.length)];
 stackedMoonsHtml += `<button onclick="openMoonModal(${i % moons.length})" class="raw-moon-pile-btn ${randomSize} active:scale-125" title="Tap Moon Phase">${m.emoji}</button>`;  
 }  
 jarContainer.innerHTML = stackedMoonsHtml;  
-promptGrid.innerHTML = moons.map((m, idx) => ` <button onclick="openMoonModal(${idx})" class="p-3.5 rounded-2xl border text-left transition-all group flex items-start gap-3 backdrop-blur-md" style="background-color: var(--moon-tab-glow); border-color: var(--moon-tab-accent-1);"> <span class="text-3xl shrink-0 group-hover:scale-110 transition-transform">${m.emoji}</span> <div class="space-y-0.5 overflow-hidden"> <span class="serif-title text-base md:text-lg font-medium block tracking-wide" style="color: var(--moon-tab-accent-1);">${escapeHtml(m.title)}</span> <span class="text-[10px] mono-font uppercase tracking-widest block font-medium opacity-85" style="color: var(--moon-tab-text);">Read me when…</span> <p class="serif-title text-sm md:text-base font-light italic leading-tight" style="color: var(--moon-tab-text);">${escapeHtml(m.prompt)}</p> </div> </button>`).join('');  
+promptGrid.innerHTML = moons.map((m, idx) => ` <button onclick="openMoonModal(${idx})" class="p-3.5 rounded-2xl border text-left transition-all group flex items-start gap-3 backdrop-blur-md" style="background-color: var(--moon-tab-glow); border-color: var(--moon-tab-accent-1);"> <span class="text-3xl shrink-0 group-hover:scale-110 transition-transform">${m.emoji}</span> <div class="space-y-0.5 overflow-hidden"> <span class="serif-title text-base md:text-lg font-medium block tracking-wide" style="color: var(--moon-tab-accent-1);">${escapeHtml(m.title)}</span> <span class="text-[10px] mono-font uppercase tracking-widest block font-medium opacity-85" style="color: var(--moon-tab-text);">Read me whenâ¦</span> <p class="serif-title text-sm md:text-base font-light italic leading-tight" style="color: var(--moon-tab-text);">${escapeHtml(m.prompt)}</p> </div> </button>`).join('');  
 renderMoonEditorList();  
 renderOpenedMoonHistory();  
 if (window.lucide) lucide.createIcons();  
@@ -2145,7 +2148,7 @@ appData.moonTabTheme = { moonsBg, cardBg, text, accent1, accent2 };
 saveToStorage();  
 applyThemeColors();  
 renderMoonSection();  
-alert('✨ Moon Tab Theme updated successfully!');  
+alert('â¨ Moon Tab Theme updated successfully!');  
 }  
   
 async function autoFetchYouTubeMetadata() {  
@@ -2154,7 +2157,7 @@ const statusEl = document.getElementById('yt-autofetch-status');
 if (!urlInput) return;  
 const videoId = extractVideoId(urlInput.value.trim());  
 if (!videoId || videoId.length !== 11) { if (statusEl) statusEl.innerHTML = ''; return; }  
-if (statusEl) statusEl.innerHTML = '<span class="text-purple-600 font-semibold animate-pulse">✨ Auto-fetching...</span>';  
+if (statusEl) statusEl.innerHTML = '<span class="text-purple-600 font-semibold animate-pulse">â¨ Auto-fetching...</span>';  
 try {  
 const res = await fetch(`https://noembed.com/embed?url=https://www.youtube.com/watch?v=${videoId}`);  
 const data = await res.json();  
@@ -2163,13 +2166,13 @@ let raw = data.title;
 let cleanTitle = raw.replace(/\[.*?\]|\(Official.*?\)/gi, '').trim();  
 document.getElementById('new-song-title').value = cleanTitle;  
 document.getElementById('new-song-artist').value = data.author_name || "Artist";  
-if (statusEl) statusEl.innerHTML = '<span class="text-emerald-600 font-bold">✅ Auto-filled!</span>';  
+if (statusEl) statusEl.innerHTML = '<span class="text-emerald-600 font-bold">â Auto-filled!</span>';  
 return;  
 }  
 } catch (e) {}  
 document.getElementById('new-song-title').value = `Track (${videoId.substring(0, 4)})`;  
 document.getElementById('new-song-artist').value = "Artist";  
-if (statusEl) statusEl.innerHTML = '<span class="text-amber-600 font-medium">✨ Populated</span>';  
+if (statusEl) statusEl.innerHTML = '<span class="text-amber-600 font-medium">â¨ Populated</span>';  
 }  
   
 function renderModalLettersList() {  
@@ -2238,7 +2241,7 @@ function renderModalSongsList() {
 const list = document.getElementById('modal-songs-list');  
 if (!list) return;  
 const songs = appData.songs || [];  
-list.innerHTML = songs.map((s, i) => ` <div class="flex items-center justify-between p-2 rounded-xl bg-white border border-purple-200 text-xs"><span class="truncate font-semibold text-purple-950">${escapeHtml(s.title)} — ${escapeHtml(s.artist)}</span> <div class="flex items-center gap-1 shrink-0"><button onclick="editSong(${i})" class="px-2 py-1 bg-purple-100 text-purple-800 text-[10px] rounded-lg">Edit</button><button onclick="deleteSong(${i})" class="text-red-600 p-1"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button></div></div>`).join('');  
+list.innerHTML = songs.map((s, i) => ` <div class="flex items-center justify-between p-2 rounded-xl bg-white border border-purple-200 text-xs"><span class="truncate font-semibold text-purple-950">${escapeHtml(s.title)} â ${escapeHtml(s.artist)}</span> <div class="flex items-center gap-1 shrink-0"><button onclick="editSong(${i})" class="px-2 py-1 bg-purple-100 text-purple-800 text-[10px] rounded-lg">Edit</button><button onclick="deleteSong(${i})" class="text-red-600 p-1"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button></div></div>`).join('');  
 if (window.lucide) lucide.createIcons();  
 }  
   
@@ -2430,7 +2433,7 @@ html += `<button onclick="applyPresetPalette('${key}')" class="palette-btn" styl
 }  
 const savedPalettes = appData.savedCustomPalettes || [];  
 savedPalettes.forEach((sp, idx) => {  
-html += `<div class="relative group inline-block"><button onclick="applySavedCustomPalette(${idx})" class="palette-btn ring-2 ring-amber-400" style="background: linear-gradient(135deg, ${sp.accentColor} 50%, ${sp.accentColor2 || sp.accentColor} 50%);" title="Saved: ${escapeHtml(sp.name)}"></button><button onclick="deleteSavedCustomPalette(${idx})" class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-red-600 text-white text-[8px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">×</button></div>`;  
+html += `<div class="relative group inline-block"><button onclick="applySavedCustomPalette(${idx})" class="palette-btn ring-2 ring-amber-400" style="background: linear-gradient(135deg, ${sp.accentColor} 50%, ${sp.accentColor2 || sp.accentColor} 50%);" title="Saved: ${escapeHtml(sp.name)}"></button><button onclick="deleteSavedCustomPalette(${idx})" class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-red-600 text-white text-[8px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">Ã</button></div>`;  
 });  
 container.innerHTML = html;  
 }  
@@ -2566,7 +2569,7 @@ renderSongs();
 renderSpotifyTracks();  
 renderAUStories();  
 renderMoonSection();  
-alert('✨ Dual-HEX Palette applied and saved successfully!');  
+alert('â¨ Dual-HEX Palette applied and saved successfully!');  
 }  
   
 function updateCustomColorsFromHexInput() {  
@@ -2659,7 +2662,7 @@ appData.moonMessages = moons;
 saveToStorage();  
 initApp();  
 toggleEditModal();  
-alert('✅ Changes saved successfully!');  
+alert('â Changes saved successfully!');  
 }  
   
 function saveToStorage() {  
